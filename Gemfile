@@ -8,6 +8,10 @@ gem 'pg'
 gem 'rack'
 gem 'sequel', '~> 5.22'
 
+group :development do
+  gem 'pry-byebug'
+end
+
 group :test do
   gem 'rack-test'
   gem 'rspec'
