@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-Sequel.migration do
-  change do
+Sequel.migration do # rubocop:disable Metrics/BlockLength
+  change do # rubocop:disable Metrics/BlockLength
     create_table(:airports) do
       primary_key :id
       String :airport_code, size: 3, fixed: true, null: false
